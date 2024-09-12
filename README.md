@@ -12,22 +12,22 @@ The key functionalities include:
 
 ## Key Technologies
 
-### ROS2 (Robot Operating System 2)
+### [ROS2 (Robot Operating System 2)](https://docs.ros.org/en/humble/index.html)
 **ROS2 Humble** will serve as the core framework for robot control, allowing for modular design, sensor fusion, and communication between different components. ROS2 enables real-time execution and reliable system-level integration, crucial for a project that involves navigation, sensor processing, and AI.
 
-### NAV2 and SLAM (Simultaneous Localization and Mapping)
+### [NAV2 and SLAM (Simultaneous Localization and Mapping)](https://docs.nav2.org/tutorials/docs/navigation2_with_slam.html)
 The **NAV2** stack will handle autonomous navigation, allowing the robot to move through the environment while dynamically avoiding obstacles. **SLAM** will be used to create maps of unknown environments and simultaneously track the robot’s position within that map. This allows the robot to navigate a maze-like environment efficiently.
 
-### Whisper STT (Speech-to-Text)
+### [Whisper STT (Speech-to-Text)](https://github.com/openai/whisper)
 **Whisper STT** will be responsible for processing voice commands. This tool converts spoken language into text that the robot can interpret and act upon. The robot will use Whisper for command recognition, making the interaction with users more natural and intuitive.
 
-### Piper TTS (Text-to-Speech)
+### [Piper TTS (Text-to-Speech)](https://github.com/rhasspy/piper)
 **Piper TTS** is the text-to-speech engine used to provide verbal responses. The robot will use this to communicate information back to the user, such as status updates, object identification results, or navigation progress. This adds a conversational layer to the human-robot interaction.
 
-### YOLO (You Only Look Once) – Image Recognition
+### [YOLO (You Only Look Once) – Image Recognition](https://docs.ultralytics.com/)
 **YOLO** is a real-time object detection algorithm that will enable the robot to visually recognize objects in its environment. By processing the images from the robot’s camera, YOLO will allow the robot to identify and compare objects or subjects against predefined data, enhancing the robot's decision-making process.
 
-### Micro-ROS
+### [Micro-ROS](https://micro.ros.org/)
 **Micro-ROS** extends ROS2 to smaller, resource-constrained devices. In this project, Micro-ROS will be used for embedded system communications, particularly for interfacing with the sensors and actuators on the ROSBOT. This allows the robot to perform low-level operations efficiently while keeping in sync with the ROS2 ecosystem.
 
 ## User Interface and Control
