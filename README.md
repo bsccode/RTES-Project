@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to develop an autonomous robot assistant using the **Husarion ROSBOT Pro 2.0** as the base unit. The robot will be capable of voice recognition, image recognition, local mapping, and autonomous navigation. It will navigate through a maze-like environment, identify a subject by comparing images, and return to its starting point using the shortest path. The system will integrate several cutting-edge technologies, both onboard and through a base station, to create an interactive and intelligent robotic assistant.
+This project aims to develop an autonomous robot assistant using the **Husarion ROSBOT Pro 2.0** as the base unit. The robot will be capable of voice recognition, image recognition, local mapping, and autonomous navigation. It will navigate through a maze-like environment, identify a subject by comparing images, and return to its starting point using the shortest path. The system will integrate several technologies, both onboard and through a base station, to create an interactive and intelligent robotic assistant.
 
 The key functionalities include:
 - **Voice Recognition**: The robot will listen and act on spoken commands.
