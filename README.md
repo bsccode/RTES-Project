@@ -1,4 +1,4 @@
-# ROS2 Humble Robot Assistant – Husarion ROSBOT Pro 2.0
+ROS2 Humble Robot Assistant – Husarion ROSBOT Pro 2.0
 
 ## Project Overview
 
