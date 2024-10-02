@@ -344,7 +344,7 @@ The `roaming_with_detection.launch.py` launch file orchestrates the startup of m
 4. **Runtime Operation:**
     - As the system operates, nodes interact dynamically based on sensor inputs, user commands, and autonomous exploration logic.
     - The launch file ensures that all components remain active and interconnected, maintaining the robot's autonomous functionality.
-
+Hmm. We’re having t
 ---
 
 ## Evolution of the Code
@@ -616,7 +616,7 @@ The `robot_control_node.py` now embodies a sophisticated autonomous control syst
 ### Publishers and Subscribers
 
 **Publishers:**
-- **Function:** Send messages to a specified topic.
+- **Function:** Send messages to a specifiHmm. We’re having ted topic.
 - **Use Case:** The `RobotControlNode` publishes velocity commands to the `/cmd_vel` topic to control the robot's movement.
 
 **Subscribers:**
