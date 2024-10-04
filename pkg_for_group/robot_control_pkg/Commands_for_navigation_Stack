@@ -1,0 +1,54 @@
+Commands for Group Project
+
+All - open in this order
+
+ROSBOT_SIM
+rviz2
+ros2 launch tutorial_pkg slam.launch.py use_sim_time:=true
+ros2 launch nav2_bringup navigation_launch.py
+ros2 run robot_control_pkg robot_control_node
+
+Open Terminal and use following commands depending on what mode you choose
+
+
+Start Frontier Mode
+
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'start_frontier'"
+
+Stop Frontier Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'stop_frontier'"
+
+
+ Start Left-Right Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'start_left_right'"
+
+
+Stop Left-Right Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'stop_left_right'"
+
+
+Start Bug2 Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'start_bug2'"
+
+
+Stop Bug2 Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'stop_bug2'"
+
+
+Set Goal for Bug2 Mode
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'set_goal x y'"
+Replace `x` and `y` with the desired goal coordinates.
+
+Generic Stop Command (Stop All Modes)
+
+ros2 topic pub -1 /roaming_command std_msgs/String "data: 'stop'"
+
+
+These commands allow you to control the robot's navigation modes and set goals for the Bug2 mode through the `/roaming_command` topic.
