@@ -711,7 +711,6 @@ The Robot Control System, comprising the `left_to_right.py`, `robot_control_node
 - **Energy Management:** Incorporate battery monitoring and management strategies to ensure prolonged and uninterrupted operation.
 - **Integration with Machine Learning:** Explore the integration of machine learning models for predictive obstacle avoidance and adaptive navigation strategies.
 
----
 
 *End of Documentation*
 ```
