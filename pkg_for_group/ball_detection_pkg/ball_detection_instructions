@@ -1,0 +1,6 @@
+compile, build and source.
+
+ROSBOT_SIM
+TELE_KEY
+ros2 run ball_detection_pkg ball_color_detector
+ros2 run ball_detection_pkg ball_info_subscriber
