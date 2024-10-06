@@ -1,0 +1,21 @@
+Follow the steps to run the project in gazebo and see results.
+
+1. Use ROSBOT_SIM command to run simulation on Gazebo (if not working refer to LAB manual 2 and 3 to set enviornment)
+{Use Add Entity to add a sphere in view of the robot camera change the sphere color to dark blue from sphere visual frop down and selecting material option from the top as shown in screenshot}
+2. make new directory with name "ros2_ws" 
+3. create new package with name "tutorial_pkg"
+4. in the src folder of the pacakge create publisher and subscriber files in .cpp format
+5. now copy the code provided in the Github for publisher subscriber and CMAKE list
+6. build the project using colcon build command
+7. source the directory with "source ~/rosbot_ws/install/setup.bash" command
+8. Open 4 new terminals to run Gazebo, publisher, subscriber and teleopkey terminal seperately
+9. Now firstly run the gazebo in terminal1
+10.Than run publisher code using "ros2 run tutorial_pkg rotate_robot_publisher" terminal2
+11.Than run the subscriber code using "ros2 run tutorial_pkg velocity_subscriber" terminal3
+12.Than run the teleopkey command to control robot manually using "ros2 run teleop_twist_keyboard teleop_twist_keyboard" in terminal4
+13.Add 3 spheres in gazebo Red, Green and Blue colored in different locations of the map
+
+
+***********please donot forget to update the CMakelists file ************************
+
+At this point the robot should be in your control via keyboard and the publisher will open a threshold mask window to detect different color of balls. Now the publisher will share the X and Y coordinates as well as the color of the ball using a shared variable to the subscriber and subscriber will print those values using that shared variable. 
